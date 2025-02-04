@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+    padding: 50px;
+    
+    
+}
+.cart-item{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+   
+}
+.cart-item img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+   
+}
+.cart-item .fa-heart{
+    position: absolute;
+    right: 30px;
+    color: white;
+    top:25px;
+} 
+.cart-item .fa-heart:hover{
+    color:red;
+    cursor: pointer;
+}
+.cart-item button{
+    width: 100%;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.cart-item button:hover{
+  background-color: white;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+}
+.cart-item h3{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.822);
+    padding: 5px;
+}
+.price{
+    display: flex;  
+    padding: 5px;
+}
+.price p{
+    color: red;
+    margin-right: 5px;
+}
+.price del{
+    color: gray;
+}
+.price .fa-star3, .fa-star4{
+    font-size: 10px;
+    padding: 2px;
+    -webkit-text-stroke:1px #FFD700;
+    -webkit-text-fill-color:transparent;
+}
+ .fa-star1,.fa-star2{
+    color:#FFD700;
+    font-size: 10px;
+    padding: 2px;
+}
+
+
+.contain{
+  background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+   margin: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: center;
+   
+
+
+
+}
+.contain p{
+  width:300px;
+  
+  
+}
+.contain img{
+  margin: 30px;
+}
+.row{
+  margin: auto;
+}
+.row h2{
+  padding: 10px;
+  color: rgb(95, 48, 138);
+}
+.row2{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+.row2 button{
+  width:200px;
+  height: 40px;
+  background-color: blueviolet;
+  color:white;
+  font-size: 15px;
+  border-color: blueviolet;
+  border: none;
+}
+.row2 button:hover{
+  background-color: white;
+  color: blueviolet;
+  border:2px solid blueviolet
+}
+.row2 h2{
+  font-size: 30px;
+}
+/* @media (min-width:344px) and (max-width:430px){*/
+@media (min-width:344px) and (max-width:430px){
+.contain .row{
+  display: none;
+}
+.contain{  
+  margin: auto;  
+}
+.contain div{
+  margin: auto;
+}
+.contain img{
+ width:350px;
+ margin: auto;
+}
+
+}
+@media (min-width:540px) and (max-width:853px){
+
+  .contain .row{
+  display: none;
+}
+.contain{  
+  margin: auto; 
+  height: 550px; 
+}
+.contain div{
+  margin: auto;
+}
+.contain img{
+ width:500px;
+ height: 480px;
+ margin: auto;
+}
+
+
+}
